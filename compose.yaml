@@ -1,5 +1,5 @@
 services:
-  app:
+  eurekaapplicationservice:
     container_name: ${COMPOSE_PROJECT_NAME}_eureka_service
     build:
       context: ./
@@ -8,10 +8,8 @@ services:
     dns:
       - 8.8.8.8
       - 8.8.4.4
-    environment:
-      SERVER_PORT: ${SERVER_PORT}
     ports:
-      - "8761:8761"
+      - "127.0.0.1:8761:8761"
 networks:
   dev_net:
     name: ${COMPOSE_PROJECT_NAME}_network
