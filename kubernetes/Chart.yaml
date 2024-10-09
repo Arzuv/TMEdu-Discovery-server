@@ -1,0 +1,6 @@
+apiVersion: v3
+name: TMEdu Eureka Service Helm Chart
+description: helm chart by deploying TMEdu Eureka Service
+type: application
+version: 1.23.1
+appVersion: "1.0.0-SNAPSHOT"

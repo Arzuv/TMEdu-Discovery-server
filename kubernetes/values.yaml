@@ -1,0 +1,11 @@
+project:
+  name: tm-edu-eureka-service
+  port: 8761
+  image:
+    name: arzuv/tmedu-eureka
+    tag: latest
+
+env:
+  dev
+owner:
+  arzuv-bahramov
